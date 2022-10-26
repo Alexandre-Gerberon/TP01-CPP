@@ -23,7 +23,7 @@ void remplacePointeur(int* a, int* b, int* c) { // partie 1.1.3
 void remplaceReference(int& a, int& b, int& c) { // partie 1.1.3
     c = a + b;
 }
-// void trie(std::array<int, 10> &tableau) { // partie 1.1.4 enlevé pour bonus
+// void trie(std::array<int, 10> &tableau) { // partie 1.1.4 enlevÃ© pour bonus
 void trie(std::vector<int> &tableau) {
     int val1;
     int choix;
@@ -41,7 +41,7 @@ void trie(std::vector<int> &tableau) {
             }
         }
         break;
-    case 2: // trie décroissant
+    case 2: // trie dÃ©croissant
         for (int i = 0; i < std::size(tableau); i = i + 1) {
             for (int j = i + 1; j < std::size(tableau); j = j + 1) {
                 if (tableau[i] < tableau[j]) {
@@ -113,7 +113,7 @@ int main()
     int taille;
     std::cout << "Quelle doit etre la taille du tableau ?"; // bonus
     std::cin >> taille; // bonus
-    // std::array<int, 10> tableau; // Enlevé pour le bonus
+    // std::array<int, 10> tableau; // EnlevÃ© pour le bonus
     std::vector<int> tableau(taille); //bonus
     srand((unsigned int)time(NULL));
     for (int i = 0; i < std::size(tableau); i = i + 1) {
